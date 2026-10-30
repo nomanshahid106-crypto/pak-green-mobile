@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pak Green Mobile — Cell Phone Store on Shahi Road | Rahim Yar Khan</title>
+<meta name="description" content="Pak Green Mobile, cell phone store on Shahi Rd, Rahim Yar Khan. New & used mobiles, accessories and repairs. Call +92 300 9206317.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#00a651; --green2:#00c853; --deep:#053b21; --ink:#0b2417;
+  --yellow:#ffd21f; --paper:#fffdf4; --wa:#22c064;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Archivo',sans-serif;background:var(--paper);color:var(--ink);overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+h1,h2,.disp{font-family:'Archivo Black',sans-serif;text-transform:uppercase;line-height:.98;letter-spacing:.01em}
+
+/* ticker */
+.ticker{background:var(--deep);color:var(--yellow);overflow:hidden;padding:10px 0;border-bottom:4px solid var(--yellow)}
+.ticker-track{display:flex;width:max-content;animation:tick 22s linear infinite;font-family:'Archivo Black',sans-serif;font-size:.92rem;letter-spacing:.14em;white-space:nowrap}
+.ticker-track span{padding:0 22px}
+.ticker-track i{color:var(--green2);font-style:normal}
+@keyframes tick{to{transform:translateX(-50%)}}
+
+/* nav */
+nav{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:16px clamp(16px,5vw,56px);position:sticky;top:0;background:rgba(255,253,244,.94);backdrop-filter:blur(6px);z-index:40;border-bottom:3px solid var(--ink)}
+.logo{display:flex;align-items:center;gap:12px}
+.logo .bolt{width:48px;height:48px;background:var(--green);border:3px solid var(--ink);border-radius:14px;display:grid;place-items:center;font-family:'Archivo Black',sans-serif;color:#fff;font-size:1.15rem;box-shadow:4px 4px 0 var(--ink);transform:rotate(-4deg)}
+.logo b{font-family:'Archivo Black',sans-serif;font-size:1.08rem;text-transform:uppercase;line-height:1.05}
+.logo small{display:block;font-family:'Archivo',sans-serif;font-weight:700;font-size:.68rem;letter-spacing:.18em;color:var(--green);text-transform:uppercase}
+.nav-call{background:var(--yellow);border:3px solid var(--ink);padding:10px 20px;border-radius:999px;font-weight:800;font-size:.85rem;box-shadow:4px 4px 0 var(--ink);transition:.15s}
+.nav-call:hover{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
+
+/* hero */
+.hero{position:relative;padding:64px clamp(16px,5vw,56px) 84px;background:
+  repeating-linear-gradient(-45deg,rgba(0,166,81,.07) 0 14px,transparent 14px 28px)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;max-width:1180px;margin:0 auto}
+@media(max-width:880px){.hero-grid{grid-template-columns:1fr}}
+.sticker{display:inline-block;background:var(--ink);color:#fff;font-weight:800;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;padding:9px 16px;border-radius:8px;transform:rotate(-2deg);box-shadow:5px 5px 0 var(--green)}
+.sticker b{color:var(--yellow)}
+.hero h1{font-size:clamp(3rem,8.5vw,6.2rem);margin:22px 0 6px}
+.hero h1 .g{color:var(--green);-webkit-text-stroke:2px var(--deep)}
+.hero h1 .out{color:transparent;-webkit-text-stroke:2.5px var(--ink)}
+.hero p.lead{font-size:1.12rem;font-weight:600;line-height:1.65;max-width:520px;margin-top:16px}
+.hero p.lead b{background:linear-gradient(transparent 62%,var(--yellow) 62%)}
+.cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 26px;border-radius:14px;border:3px solid var(--ink);font-weight:800;font-size:.95rem;transition:.15s}
+.btn:hover{transform:translate(2px,2px)}
+.btn-call{background:var(--green);color:#fff;box-shadow:5px 5px 0 var(--ink)}
+.btn-call:hover{box-shadow:3px 3px 0 var(--ink)}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:5px 5px 0 var(--ink)}
+.btn-wa:hover{box-shadow:3px 3px 0 var(--ink)}
+.btn-map{background:#fff;color:var(--ink);box-shadow:5px 5px 0 var(--yellow)}
+.btn-map:hover{box-shadow:3px 3px 0 var(--yellow)}
+.tags{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.tag{position:relative;background:var(--yellow);border:3px solid var(--ink);font-family:'Archivo Black',sans-serif;font-size:.82rem;letter-spacing:.1em;padding:10px 30px 10px 18px;clip-path:polygon(0 0,calc(100% - 20px) 0,100% 50%,calc(100% - 20px) 100%,0 100%);transform:rotate(-2deg)}
+.tag:nth-child(2){background:#fff;transform:rotate(1.6deg)}
+.tag:nth-child(3){background:var(--green);color:#fff;transform:rotate(-1deg)}
+.tag::after{content:"";position:absolute;right:12px;top:50%;transform:translateY(-50%);width:9px;height:9px;border-radius:50%;background:var(--paper);border:2px solid var(--ink)}
+
+/* phone mock */
+.phone-wrap{display:flex;justify-content:center}
+.phone{width:min(280px,74vw);aspect-ratio:9/18.6;background:var(--deep);border:4px solid var(--ink);border-radius:38px;box-shadow:12px 14px 0 rgba(5,59,33,.9);padding:12px;transform:rotate(4deg);animation:bob 3.4s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:rotate(4deg) translateY(0)}50%{transform:rotate(4deg) translateY(-12px)}}
+.screen{height:100%;border-radius:28px;background:linear-gradient(160deg,var(--green2),var(--green) 45%,#04763c);color:#fff;padding:22px 18px;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.screen::before{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:rgba(255,210,31,.35);top:-70px;right:-70px}
+.screen .notch{width:86px;height:20px;background:var(--deep);border-radius:999px;margin:0 auto 20px}
+.screen h3{font-family:'Archivo Black',sans-serif;font-size:1.5rem;text-transform:uppercase;line-height:1.05}
+.screen p{font-weight:700;font-size:.85rem;margin-top:8px;opacity:.92}
+.screen .pill{margin-top:auto;background:#fff;color:var(--deep);border-radius:999px;text-align:center;font-weight:800;padding:11px;font-size:.85rem}
+
+/* sections */
+section{padding:74px clamp(16px,5vw,56px)}
+.wrap{max-width:1180px;margin:0 auto}
+.kick{display:inline-block;background:var(--yellow);border:3px solid var(--ink);padding:6px 14px;border-radius:999px;font-weight:800;font-size:.75rem;letter-spacing:.2em;text-transform:uppercase;box-shadow:3px 3px 0 var(--ink)}
+h2.big{font-size:clamp(2rem,4.6vw,3.2rem);margin:18px 0 8px}
+.sub{font-weight:600;color:#3d5546;max-width:640px;line-height:1.7}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px;margin-top:38px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:22px;padding:26px 22px;box-shadow:7px 7px 0 rgba(5,59,33,.14);transition:.18s;position:relative}
+.card:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 rgba(0,166,81,.35)}
+.card .emo{font-size:2.1rem}
+.card h3{font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:1.12rem;margin:12px 0 8px}
+.card p{font-weight:600;color:#3d5546;font-size:.94rem;line-height:1.65}
+.card .mini{position:absolute;top:16px;right:16px;background:var(--yellow);border:2px solid var(--ink);border-radius:6px;font-size:.62rem;font-weight:800;letter-spacing:.12em;padding:4px 8px;transform:rotate(3deg)}
+.card:nth-child(even) .mini{background:var(--green);color:#fff}
+
+/* diagonal band */
+.band{background:var(--green);color:#fff;transform:rotate(-1.4deg) scale(1.03);border-top:4px solid var(--ink);border-bottom:4px solid var(--ink)}
+.band .wrap{display:flex;gap:26px;flex-wrap:wrap;justify-content:space-between;align-items:center}
+.band h2{font-size:clamp(1.7rem,4vw,2.7rem)}
+.band p{font-weight:700;max-width:480px;line-height:1.6}
+.band .btn{background:var(--yellow);color:var(--ink);box-shadow:5px 5px 0 var(--ink)}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:880px){.visit{grid-template-columns:1fr}}
+.vcard{border:3px solid var(--ink);border-radius:22px;padding:32px;background:#fff;box-shadow:7px 7px 0 rgba(5,59,33,.14)}
+.vcard.dark{background:var(--deep);color:#fff;box-shadow:7px 7px 0 var(--yellow)}
+.vcard h3{font-family:'Archivo Black',sans-serif;text-transform:uppercase;font-size:1.35rem;margin-bottom:16px}
+.kv{display:flex;gap:12px;padding:11px 0;border-bottom:2px dashed rgba(120,150,130,.4);font-weight:600;line-height:1.6}
+.kv:last-child{border-bottom:none}
+.kv b{min-width:88px;text-transform:uppercase;font-size:.72rem;letter-spacing:.14em;color:var(--green);padding-top:3px}
+.vcard.dark .kv b{color:var(--yellow)}
+.stars{font-size:2.4rem;font-family:'Archivo Black',sans-serif;color:var(--yellow);-webkit-text-stroke:1.5px var(--ink)}
+footer{padding:36px clamp(16px,5vw,56px) 110px;text-align:center;color:#5a7263;font-weight:600;font-size:.88rem;line-height:1.8}
+footer b{color:var(--ink);font-family:'Archivo Black',sans-serif;text-transform:uppercase}
+
+/* mobile bar */
+.mbar{position:fixed;left:12px;right:12px;bottom:12px;z-index:60;display:none;gap:10px}
+.mbar a{flex:1;text-align:center;padding:14px;border-radius:14px;border:3px solid var(--ink);font-weight:800;font-size:.9rem}
+.mbar .c{background:var(--yellow);color:var(--ink)}
+.mbar .w{background:var(--wa);color:#fff}
+@media(max-width:760px){.mbar{display:flex}}
+</style>
+</head>
+<body>
+
+<div class="ticker" aria-hidden="true"><div class="ticker-track">
+  <span>New Mobiles <i>✦</i></span><span>Used Mobiles <i>✦</i></span><span>Accessories <i>✦</i></span><span>Repairs <i>✦</i></span><span>Shahi Road · RYK <i>✦</i></span>
+  <span>New Mobiles <i>✦</i></span><span>Used Mobiles <i>✦</i></span><span>Accessories <i>✦</i></span><span>Repairs <i>✦</i></span><span>Shahi Road · RYK <i>✦</i></span>
+</div></div>
+
+<nav>
+  <a class="logo" href="#top"><span class="bolt">PG</span><span><b>Pak Green<br>Mobile</b><small>Cell Phone Store</small></span></a>
+  <a class="nav-call" href="tel:+923009206317">☎ Call the Shop</a>
+</nav>
+
+<main id="top">
+  <header class="hero">
+    <div class="hero-grid">
+      <div>
+        <span class="sticker">★ <b>3.9</b> · 88 Google Reviews</span>
+        <h1>Pak <span class="g">Green</span><br><span class="out">Mobile</span></h1>
+        <p class="lead">Shahi Road's loud, proud mobile bazaar stop — <b>new phones, used phones, accessories and repairs</b>, all under one green roof in Rahim Yar Khan.</p>
+        <div class="cta">
+          <a class="btn btn-call" href="tel:+923009206317">☎ Call +92 300 9206317</a>
+          <a class="btn btn-wa" href="https://wa.me/923009206317" target="_blank" rel="noopener">WhatsApp Us</a>
+          <a class="btn btn-map" href="https://www.google.com/maps/search/?api=1&amp;query=Pak+Green+Mobile+Rahim+Yar+Khan" target="_blank" rel="noopener">📍 Directions</a>
+        </div>
+        <div class="tags" aria-hidden="true">
+          <span class="tag">New Stock</span>
+          <span class="tag">Used Deals</span>
+          <span class="tag">Ask In Store</span>
+        </div>
+      </div>
+      <div class="phone-wrap" aria-hidden="true">
+        <div class="phone"><div class="screen">
+          <div class="notch"></div>
+          <h3>New phone<br>day?</h3>
+          <p>Fresh stock, honest used options and every accessory on the wall.</p>
+          <div class="pill">Visit us on Shahi Road →</div>
+        </div></div>
+      </div>
+    </div>
+  </header>
+
+  <section id="shop">
+    <div class="wrap">
+      <span class="kick">Inside the Shop</span>
+      <h2 class="big">Everything mobile,<br>nothing boring</h2>
+      <p class="sub">The everyday counters of a busy cell phone store. Stock changes fast in the bazaar — call or WhatsApp ahead to check what is on the shelf today.</p>
+      <div class="cards">
+        <div class="card"><span class="mini">Fresh</span><div class="emo">📱</div><h3>New Mobiles</h3><p>Brand-new phones across popular ranges — pick your model, storage and colour in store.</p></div>
+        <div class="card"><span class="mini">Value</span><div class="emo">🔄</div><h3>Used Mobiles</h3><p>Pre-owned phones for every budget. Check condition and options at the counter before you buy.</p></div>
+        <div class="card"><span class="mini">Gear</span><div class="emo">🎧</div><h3>Accessories</h3><p>Covers, protectors, chargers, cables, earphones and the little extras every phone needs.</p></div>
+        <div class="card"><span class="mini">Fix It</span><div class="emo">🔧</div><h3>Repairs</h3><p>Phone playing up? Bring it in and ask about repair options for common mobile problems.</p></div>
+        <div class="card"><span class="mini">Ask Us</span><div class="emo">🧾</div><h3>Easy Installments</h3><p>Want to spread the cost? Ask in store about easy installment information and what is currently offered.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <div class="wrap" style="padding:38px 0">
+      <div>
+        <h2>Not sure which phone?</h2>
+        <p>Tell us your budget and what you use your phone for — we will point you to the shelf that fits.</p>
+      </div>
+      <a class="btn" href="https://wa.me/923009206317?text=I%20need%20help%20choosing%20a%20mobile" target="_blank" rel="noopener">Ask on WhatsApp →</a>
+    </div>
+  </div>
+
+  <section id="visit">
+    <div class="wrap">
+      <span class="kick">Find Us</span>
+      <h2 class="big">On Shahi Road</h2>
+      <div class="visit" style="margin-top:30px">
+        <div class="vcard">
+          <h3>Shop Details</h3>
+          <div class="kv"><b>Store</b><span>Pak Green Mobile — Cell phone store</span></div>
+          <div class="kv"><b>Address</b><span>Shahi Rd, Rahim Yar Khan, 64200, Pakistan</span></div>
+          <div class="kv"><b>Phone</b><span><a href="tel:+923009206317">+92 300 9206317</a></span></div>
+          <div class="kv"><b>Map</b><span><a href="https://www.google.com/maps/search/?api=1&amp;query=Pak+Green+Mobile+Rahim+Yar+Khan" target="_blank" rel="noopener">Open in Google Maps →</a></span></div>
+        </div>
+        <div class="vcard dark">
+          <h3> Rated by RYK</h3>
+          <div class="stars">3.9 ★</div>
+          <p style="font-weight:600;line-height:1.7;margin-top:8px">From 88 reviews on Google — a known stop on Rahim Yar Khan's busiest mobile shopping road.</p>
+          <div class="cta" style="margin-top:20px">
+            <a class="btn btn-wa" href="https://wa.me/923009206317" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-call" style="background:var(--yellow);color:var(--ink)" href="tel:+923009206317">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <b>Pak Green Mobile</b> · Cell Phone Store · Shahi Rd, Rahim Yar Khan<br>
+  Sample website concept created for Pak Green Mobile. Details shown are from the business's public Google listing; please confirm services, prices and timings with the business.
+</footer>
+
+<div class="mbar">
+  <a class="c" href="tel:+923009206317">☎ Call Now</a>
+  <a class="w" href="https://wa.me/923009206317" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+</body>
+</html>
